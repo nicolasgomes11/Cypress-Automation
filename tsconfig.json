@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": ["ES6", "dom"],
+    "module": "CommonJS",
+    "strict": true,
+    "types": ["cypress", "node"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "baseUrl": "./",
+    "paths": {
+      "@interfaces/*": ["cypress/interface/*"],
+      "@constants": ["constants.ts"]
+    }
+  },
+  "include": [
+    "cypress/**/*.ts",
+    "constants.ts"
+  ]
+}
