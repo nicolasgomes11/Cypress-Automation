@@ -3,7 +3,6 @@ import { defineConfig } from 'cypress';
 
 export default defineConfig({
   e2e: {
-    baseUrl: "https://www.parts-express.com/", // Definição direta da baseUrl
     setupNodeEvents(on, config) {
       on('task', {
         logError(message) {
@@ -17,11 +16,12 @@ export default defineConfig({
     env: {
       EMAIL: process.env.EMAIL,
       PASSWORD: process.env.PASSWORD,
+      BASE_URL: process.env.BASE_URL,
     },
     specPattern: 'cypress/e2e/**/*.cy.ts',
     testIsolation: false,
-    defaultCommandTimeout: 20000, // Aumenta o tempo de espera para comandos padrão (20s)
-    requestTimeout: 15000, // Aumenta o timeout para requisições HTTP (15s)
-    pageLoadTimeout: 20000, // Aumenta o timeout para carregamento de página (20s)
+    defaultCommandTimeout: 20000,
+    requestTimeout: 15000,
+    pageLoadTimeout: 20000,
   },
 });

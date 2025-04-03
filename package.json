@@ -18,15 +18,17 @@
     "@types/faker": "^6.6.8",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.13.1",
+    "common-tags": "^1.8.2",
     "cypress": "^14.0.2",
+    "dotenv": "^16.4.7",
     "eslint": "^9.19.0",
     "eslint-plugin-import": "^2.31.0",
+    "lazy-ass": "^2.0.3",
     "mocha": "^11.1.0",
     "typescript": "^5.7.3"
   },
   "dependencies": {
     "@faker-js/faker": "^9.4.0",
-    "dotenv": "^16.4.7",
     "faker-br": "^0.4.1"
   }
 }

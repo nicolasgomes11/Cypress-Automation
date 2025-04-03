@@ -1,5 +1,5 @@
 import RegisterInteractions from "./register.interactions";
-import { IRegisterInterface } from '../../../../../interface/fartechWebsite/login/register.interface';
+import { IRegisterInterface } from '../../../../../interface/fartechWebsite/register/register.interface';
 
 export default class RegisterActions extends RegisterInteractions {
     

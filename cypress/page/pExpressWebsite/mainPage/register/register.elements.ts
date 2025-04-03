@@ -1,6 +1,6 @@
 export default class RegisterElements {
 
-    get inpSignIn() { return cy.get('.row-one-links > .account-link > .header-menu-profile > .header-profile-login-link > p') }
+    get inpSignIn() { return cy.get('#site-header > div:nth-of-type(3) > ul > li:nth-of-type(2) > div > a:first-of-type') }
     get inpFirstName() { return cy.get("#register-firstname") }
     get inpLastName() { return cy.get("#register-lastname") }
     get inpEmail() { return cy.get("#register-email") }
