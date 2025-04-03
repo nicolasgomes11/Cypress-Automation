@@ -20,5 +20,8 @@ export default defineConfig({
     },
     specPattern: 'cypress/e2e/**/*.cy.ts',
     testIsolation: false,
+    defaultCommandTimeout: 20000, // Aumenta o tempo de espera para comandos padrão (10s)
+    requestTimeout: 15000, // Aumenta o timeout para requisições HTTP (15s)
+    pageLoadTimeout: 20000, // Aumenta o timeout para carregamento de página (20s)
   },
 });
