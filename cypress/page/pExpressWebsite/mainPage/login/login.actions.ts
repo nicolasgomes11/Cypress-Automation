@@ -1,5 +1,5 @@
 import LoginInteractions from "./login.interactions";
-import { ILoginWebsiteInterface } from '../../../../../interface/fartechWebsite/login/login.interface';
+import { ILoginWebsiteInterface } from '../../../../../interface/Website/login/login.interface';
 
 export default class LoginActions extends LoginInteractions {
 

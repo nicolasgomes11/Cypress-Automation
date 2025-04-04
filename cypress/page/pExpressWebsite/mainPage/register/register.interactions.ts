@@ -2,29 +2,29 @@ import RegisterElements from "./register.elements";
 
 export default class RegisterInteractions extends RegisterElements {
 
-    public clickSignIn() {
+    protected clickSignIn() {
         super.inpSignIn.click();
     }
-    public setFirstName(firstName: string) {
+    protected setFirstName(firstName: string) {
         super.inpFirstName.type(firstName);
     }
-    public setLastName(lastName: string) {
+    protected setLastName(lastName: string) {
         super.inpLastName.type(lastName);
     }
 
-    public setEmail(email: string) {
+    protected setEmail(email: string) {
         super.inpEmail.type(email);
     }
 
-    public setPassword(password: string) {
+    protected setPassword(password: string) {
         super.inpPassword.type(password);
     }
 
-    public setConfirmPassword(password: string) {
+    protected setConfirmPassword(password: string) {
         super.inpConfirmPassword.type(password);
     }
 
-    public clickCreateAccount() {
+    protected clickCreateAccount() {
         super.btnCreateAccount.click();
     }  
 
